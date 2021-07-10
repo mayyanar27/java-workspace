@@ -10,4 +10,7 @@ public class TestExcepiton {
     public static void testException() throws Exception {
         throw new Exception("hi am exception");
     }
+    public static void testException2(){
+        System.out.println("Hello");
+    }
 }

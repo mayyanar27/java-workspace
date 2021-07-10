@@ -1,5 +1,7 @@
 package org.example;
 
+import org.junit.jupiter.api.Assumptions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -13,10 +15,12 @@ import static org.junit.jupiter.api.Assertions.*;
 public class FirstTest {
     @Test
     public void abc() {
+        Assumptions.assumeTrue(false);
         assertEquals("a", "a");
     }
 
     @Test
+    @Disabled
     public void testAbc(){
         assertEquals(111,111);
     }
